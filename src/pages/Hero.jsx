@@ -41,25 +41,33 @@ function Header() {
     </div>
   )
 }
-function Section2(){
-return (<div className="flex flex-col overflow-hidden">
-  <div className="bg-black pt-14 text-center">
-<span className='text-6xl font-bold text-white text-center leading-[7rem]'>
-  Track Your Spendings and</span><br /><span className='text-6xl font-bold bg-black text-white text-center leading-[7rem]'>boost your Savings
-</span>
-</div>
-  <ContainerScroll
-  >
-    <img
-      src={`src/assets/hero.png`}
-      alt="hero"
-      height={`200%`}
-      width={`100%`}
-      className="mx-auto rounded-2xl object-cover h-full object-left-top"
-    />
-  </ContainerScroll>
-</div>);
+import heroImage from '../assets/hero.png'; 
+
+function Section2() {
+  return (
+    <div className="flex flex-col overflow-hidden">
+      <div className="bg-black pt-14 text-center">
+        <span className="text-6xl font-bold text-white text-center leading-[7rem]">
+          Track Your Spendings and
+        </span>
+        <br />
+        <span className="text-6xl font-bold bg-black text-white text-center leading-[7rem]">
+          boost your Savings
+        </span>
+      </div>
+      <ContainerScroll>
+        <img
+          src={heroImage}
+          alt="hero"
+          height="200%"
+          width="100%"
+          className="mx-auto rounded-2xl object-cover h-full object-left-top"
+        />
+      </ContainerScroll>
+    </div>
+  );
 }
+
 
 function Section3(){
 
